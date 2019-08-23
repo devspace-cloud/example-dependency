@@ -1,0 +1,9 @@
+default:
+  config:
+    data:
+      version: v1beta2
+      deployments:
+        - name: remote-dependency-subpath
+          component:
+            containers:
+              - image: nginx
