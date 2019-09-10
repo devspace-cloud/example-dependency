@@ -1,10 +1,10 @@
 version: v1beta3
 images:
  default:
-   image: dscr.io/${DEVSPACE_USERNAME}/devspace
+   image: dscr.io/test/devspace
    createPullSecret: true
 deployments:
  - name: subDirDependency
    component:
      containers:
-       - image: dscr.io/${DEVSPACE_USERNAME}/devspace
+       - image: dscr.io/test/devspace
