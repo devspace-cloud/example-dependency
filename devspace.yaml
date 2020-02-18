@@ -4,3 +4,10 @@ deployments:
     component:
       containers:
         - image: nginx
+hooks:
+- command: echo
+  args:
+  - ${DEVSPACE_GIT_COMMIT}
+  when:
+    before:
+      deployments: all
