@@ -1,6 +1,8 @@
 version: v1beta9
 deployments:
   - name: remote-dependency
-    component:
-      containers:
+    helm:
+      componentChart: true
+      values:
+        containers:
         - image: nginx
